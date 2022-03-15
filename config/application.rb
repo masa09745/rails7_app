@@ -12,6 +12,8 @@ module Rails7App
     config.load_defaults 7.0
     config.i18n.default_locale = :ja
 
+    config.permitted_origin = ENV.fetch('PERMITTED_ORIGIN', 'https://localhost:8000')
+
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
